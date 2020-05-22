@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="This page gives you a brief overview of the USA news related to Coronavirus and also links to the complete article for further read." />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>COVIDash</title>
+    <style>
+        .pagecenter {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                margin: 0 4px;
+            }
+
+                .pagination a:hover {
+                    background-color: #ddd
+                }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="navbar" style="position:fixed">
+        <span class="open-slide">
+            <a onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+
+
+            <li><a href="../index.html">Stats</a></li>
+            <li><a href="../map.html">Map</a></li>
+            <li><a href="../storelocator.html">Stores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="../world/1.html">World</a>
+        <a href="../india/1.html">India</a>
+        <a href="#">USA</a>
+        <a href="../vid/News_video.html">Videos</a>
+        <a href="../vid/Pstive_news.html">Good News</a>
+    </div>
+    <div id="secwrapper" style="padding-top:100px">
+        
+        <div class="card">
+            <a href="https://www.newindianexpress.com/world/2020/may/04/china-either-incompetent-in-preventing-covid-19-spread-or-did-it-for-a-reason-donald-trump-2139176.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/3.jpg" alt="" /></a>
+            <h1>China either incompetent in preventing COVID-19 or did it for a reason: Trump</h1>
+            <p>US President Donald Trump said that China was either "incompetent" in preventing the coronavirus from spreading globally or did it for a reason. "We wanted to go (to) China. They didn't want us to go in because they didn't want to have us see it. Maybe they were worried about competence. Maybe they were worried about something else," Trump added.</p>
+            <a href="https://www.newindianexpress.com/world/2020/may/04/china-either-incompetent-in-preventing-covid-19-spread-or-did-it-for-a-reason-donald-trump-2139176.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+        <div class="card">
+            <a href="https://twitter.com/ANI/status/1257329991760711683?s=20&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/4.jpg" alt="" /></a>
+            <h1>Up to 1 lakh may die from coronavirus in US: President Trump</h1>
+            <p style=" margin-bottom: 25px;">US President Donald Trump said that up to 1 lakh people could die from coronavirus in the country after the death toll passed his earlier estimates. "I think we're going to have a vaccine (for coronavirus) by the end of the year," he added. The US has reported nearly 68,000 deaths from the coronavirus.</p>
+            <a href="https://twitter.com/ANI/status/1257329991760711683?s=20&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+
+        <div class="card">
+            <a href="https://www.newindianexpress.com/world/2020/may/03/former-us-president-bush-calls-on-americans-to-be-empathetic-compassionate-during-pandemic-2138597.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/6.jpg" alt="" /></a>
+            <h1>Ex-US Prez Bush urges Americans to be empathetic during pandemic</h1>
+            <p style="margin-bottom: 10px;">Former US President George Bush urged Americans to be empathetic, compassionate and kind during the coronavirus pandemic. Bush also said that these are essential and powerful tools of national recovery. The US is the worst coronavirus-hit country in the world with over 11 lakh cases of the virus and over 66,000 deaths from the virus.</p>
+            <a href="https://www.newindianexpress.com/world/2020/may/03/former-us-president-bush-calls-on-americans-to-be-empathetic-compassionate-during-pandemic-2138597.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+
+    </div>
+    <div class="pagecenter" style="padding-top:15px">
+        <div class="pagination">
+
+            <a href="1.html">1</a>
+            <a href="#" style="background-color: #ddd">2</a>
+
+        </div>
+    </div>
+    <script>
+			function openSlideMenu() {
+				document.getElementById('side-menu').style.width = '250px';
+				document.getElementById('nav').style.marginLeft = '250px';
+			}
+
+			function closeSlideMenu() {
+				document.getElementById('side-menu').style.width = '0';
+				document.getElementById('nav').style.marginLeft = '0';
+			}
+    </script>
+</body>
+</html>
+
+
+
+

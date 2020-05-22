@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="This page gives you a brief overview of the India news related to Coronavirus and also links to the complete article for further read." />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>COVIDash</title>
+    <style>
+        .pagecenter {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                margin: 0 4px;
+            }
+
+                .pagination a:hover {
+                    background-color: #ddd
+                }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="navbar" style="position:fixed">
+        <span class="open-slide">
+            <a onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+
+
+            <li><a href="../index.html">Stats</a></li>
+            <li><a href="../map.html">Map</a></li>
+            <li><a href="../storelocator.html">Stores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="../world/1.html">World</a>
+        <a href="#">India</a>
+        <a href="../USA/1.html">USA</a>
+        <a href="../vid/News_video.html">Videos</a>
+        <a href="../vid/Pstive_news.html">Good News</a>
+    </div>
+    <div id="secwrapper" style="padding-top:100px">
+        
+        <div class="card">
+            <a href="https://twitter.com/ANI/status/1257333911824338946?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/3.jpg" alt="" /></a>
+            <h1>Coronavirus has shown us limitation of existing international system: PM Modi</h1>
+            <p>While addressing Non-Aligned Movement Summit through video conferencing, PM Narendra Modi said, "COVID-19 has shown us the limitation of existing international system." He added, "In the post COVID-19 world, we need a new template of globalisation based on fairness, equality and humanity." "We need international institutions that are more representative of today's world," he further said.</p>
+            <a href="https://twitter.com/ANI/status/1257333911824338946?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+        <div class="card">
+            <a href="https://twitter.com/ANI/status/1257329991760711683?s=20&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/4.jpg" alt="" /></a>
+            <h1>India regarded as pharmacy of world, sent medical supplies to 123 countries: PM</h1>
+            <p style=" margin-bottom: 25px;">PM Narendra Modi on Monday spoke at Non-Aligned Movement (NAM) Summit via video-conferencing where he said, "India is regarded as the pharmacy of the world, especially for affordable medicines." He added, "Despite our own needs, we have ensured medical supplies to 123 partner countries, including 59 NAM members." The NAM comprises 120 developing nations from Asia, Africa and Latin America.</p>
+            <a href="https://twitter.com/ANI/status/1257329991760711683?s=20&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+
+        <div class="card">
+            <a href="https://twitter.com/PTI_News/status/1257267857815035904?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/6.jpg" alt="" /></a>
+            <h1>Coronavirus peak may not come in India at all if we work collectively: Govt</h1>
+            <p style="margin-bottom: 57px;">The Ministry of Health and Family Welfare's Joint Secretary Lav Agarwal on Monday said that the coronavirus curve is relatively flat as of now. He added, "If we work collectively, coronavirus peak may not come. However, if we fail, we may see spike in cases." India has reported 42,836 coronavirus cases till now.</p>
+            <a href="https://twitter.com/PTI_News/status/1257267857815035904?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+
+    </div>
+    <div class="pagecenter" style="padding-top:15px">
+        <div class="pagination">
+
+            <a href="1.html">1</a>
+            <a href="#" style="background-color: #ddd">2</a>
+
+        </div>
+    </div>
+    <script>
+			function openSlideMenu() {
+				document.getElementById('side-menu').style.width = '250px';
+				document.getElementById('nav').style.marginLeft = '250px';
+			}
+
+			function closeSlideMenu() {
+				document.getElementById('side-menu').style.width = '0';
+				document.getElementById('nav').style.marginLeft = '0';
+			}
+    </script>
+</body>
+</html>
+
+
+
+

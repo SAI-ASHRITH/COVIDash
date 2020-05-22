@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>COVIDash</title>
+    <style>
+        .pagecenter{
+            text-align:center;
+        }
+
+        .pagination{
+            display: inline-block;
+        }
+
+        .pagination a{
+            color:black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+        .pagination a:hover{background-color : #ddd}
+    </style>
+</head>
+<body>
+    <nav id="nav" class="navbar" style="position:fixed">
+        <span class="open-slide">
+            <a onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+
+
+            <li><a href="../index.html">Stats</a></li>
+            <li><a href="../map.html">Map</a></li>
+            <li><a href="../storelocator.html">Stores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">World</a>
+        <a href="../india/1.html">India</a>
+        <a href="../USA/1.html">USA</a>
+        <a href="../vid/News_video.html">Videos</a>
+        <a href="../vid/Pstive_news.html">Good News</a>
+    </div>
+    <div id="secwrapper" style="padding-top:100px">
+        <div class="card">
+            <a href="https://twitter.com/ANI/status/1257333911824338946?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/3.jpg" alt="" /></a>
+            <h1>Not surprising COVID-19 reported in France month before 1st official cases: WHO</h1>
+            <p style="margin-bottom: 25px;">The World Health Organization (WHO) said on Tuesday that it was "not surprising" that a report of COVID-19 had emerged on December 27 in France. This was nearly a month before France confirmed its first three cases of coronavirus on January 24. "It's also possible there are more early cases to be found," WHO spokesperson Christian Lindmeier said.</p>
+            <a href="https://twitter.com/ANI/status/1257333911824338946?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+        <div class="card">
+            <a href="https://www.rt.com/news/487799-who-france-december-covid19/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank"><img class="article-img" src="images/4.jpg" alt="" /></a>
+            <h1>UK coronavirus death toll reaches 29,427, becomes 2nd highest in world after US</h1>
+            <p style=" margin-bottom: 25px;">The death toll due to coronavirus in UK has reached 29,427 after 693 new deaths were reported in last 24 hours. With this, UK has overtaken Italy (29,315) to report the highest official death toll in Europe and the second highest in the world. The US has reported the highest number of coronavirus deaths in the world with 69,079 fatalities.</p>
+            <a href="https://www.rt.com/news/487799-who-france-december-covid19/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts" target="_blank" class="readmore">Read more</a>
+        </div>
+
+        <div class="card">
+            <a href="#"><img class="article-img" src="images/6.jpg" alt="" /></a>
+            <h1>Coronavirus most likely emerged from Chinese wildlife market: Australia PM</h1>
+            <p>Australian Prime Minister Scott Morrison has said that the novel coronavirus "most likely" emerged from a wildlife wet market in China. However, he added that he wouldn't rule out US President Donald Trump's theory that the coronavirus may have originated in a Chinese virology lab. Morrison has been pushing for an international inquiry into how the virus developed and spread.</p>
+            <a href="#" class="readmore">Read more</a>
+        </div>
+
+    </div>
+    <div class="pagecenter" style="padding-top:15px">
+        <div class="pagination">
+            
+            <a href="1.html">1</a>
+            <a href="#" style="background-color: #ddd">2</a>
+            
+        </div>
+    </div>
+    <script>
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('nav').style.marginLeft = '250px';
+            }
+
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('nav').style.marginLeft = '0';
+            }
+    </script>
+</body>
+</html>
+
+
+
+

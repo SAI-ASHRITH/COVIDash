@@ -1,0 +1,7 @@
+# robots.txt for COVIDash
+
+User-agent: *
+Disallow:/client/public/add.html
+Disallow:/client/public/about_fr.html
+Disallow:/client/public/about_gr.html
+Disallow:/client/public/vid/News_video.html

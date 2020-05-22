@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset>
+  <url>
+    <loc>https://coronavirus.jhu.edu/</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.cdc.gov/coronavirus/2019-ncov/index.html</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.who.int/emergencies/diseases/novel-coronavirus-2019</loc>
+    <priority>1</priority>
+  </url>
+</urlset>

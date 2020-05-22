@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="description" content="This page shows a map of the local stores in the vicinity and also has an option of searching and saving the favorite stores" />
+    <style>
+      .navbar{
+  background-color:#3b5998;
+  overflow:hidden;
+  height:63px;
+ /* position:fixed;*/
+  width:100%;
+  top:0;
+}
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#ddd;
+  color:#000;
+}
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <!--<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>COVIDash</title>
+    
+  </head>
+  <body>
+    <nav id="nav" class="navbar" style="position:fixed">
+
+
+        <ul class="navbar-nav">
+
+
+            <li><a href="index.html">Stats</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="storelocator.html">Stores</a></li>
+            <li><a href="world/1.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+  </nav>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+type="text/css"
+/>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
+    
+    <div class="container my-3" style="padding-top: 60px;">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-map-marked mr-4"></i>Store Locator
+        </h1>
+        <a href="add.html" class="btn btn-success mb-4" style="background-color: rgb(46, 197, 46); font-family: Helvetica; text-decoration: none; padding:1em 1.5em;">Add Store</a>
+        <style>
+            .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <div
+          id="map"
+          style="width: 100%; height: 500px;border-radius: 5px; padding-top: 20px;"
+        ></div>
+      </div>
+      <script src="js/map.js"></script>
+  </body>
+</html>

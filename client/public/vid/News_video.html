@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="This page has some informative videos relatted to Coronavirus" />
+    <title>Covidash</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pagecenter {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+                margin: 0 4px;
+            }
+
+                .pagination a:hover {
+                    background-color: #ddd
+                }
+    </style>
+</head>
+<body>
+    <nav id="nav" class="navbar" style="position:fixed">
+        <span class="open-slide">
+            <a onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+
+
+            <li><a href="../index.html">Stats</a></li>
+            <li><a href="../map.html">Map</a></li>
+            <li><a href="../storelocator.html">Stores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="../world/1.html">World</a>
+        <a href="../india/1.html">India</a>
+        <a href="../USA/1.html">USA</a>
+        <a href="#">Videos</a>
+        <a href="../vid/Pstive_news.html">Good News</a>
+    </div>
+    <main style="padding-top:100px">
+
+        <section class="cards">
+            <article>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/42czxltBy1I">
+                </iframe>
+            </article>
+            <article>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/WOUczLNNwYM">
+                </iframe>
+            </article>
+            <article>
+                <iframe width="320" height="220" src="https://www.youtube.com/embed/n1RGyiUOm1c">
+                </iframe>
+            </article>
+            
+
+
+
+        </section>
+    </main>
+    <div class="pagecenter" style="padding-top:15px">
+        <div class="pagination">
+
+            <a href="#" style="background-color: #ddd">1</a>
+            <a href="n2.html">2</a>
+            <a href="n3.html">3</a>
+
+        </div>
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('nav').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('nav').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+img{
+	border: none;
+}
+
+body{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+}
+section{
+	width: 1000px;
+	margin: auto;
+}
+
+#secwrapper{
+		/*background: url('images/bg.gif') fixed;
+		background-color: #f47771;*/ 
+			margin-left: 13%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+			grid-gap: 30px;	 
+			max-width: 960px;
+			padding-top: 20px; 
+	}
+.card{
+	
+	padding: 7px;
+    border-radius: 3px;
+	border: 1px solid #c8c8c8;
+    box-shadow: 0 2px 3px #ccc;
+	text-align: justify;
+}
+.card:hover{
+	background-color: rgb(226, 223, 223);
+}
+
+.card p:hover{
+	font-size: 14.5px;
+}
+.card h1:hover{
+	font-size: 15.5px;
+}
+
+.card p{
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+}
+
+.card h1{
+	font-size: 15px;
+
+}
+
+.readmore{
+	background-color: rgb(212, 207, 207);
+	padding: 5px 10px;
+	color: rgb(150, 148, 148);
+	text-decoration: none;
+	border-radius: 3px;
+	
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.readmore:hover{
+	background-color: #5a5959;
+	color: rgb(17, 16, 16);
+}
+
